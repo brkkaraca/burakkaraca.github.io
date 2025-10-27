@@ -1,13 +1,19 @@
-# Burak Karaca - Kişisel Site
-Vite + React + Tailwind. Hash routing, GitHub Pages uyumlu.
+# burak-karaca-site
 
-## Çalıştırma
-npm i
+Vite + React + Tailwind tabanlı kişisel web sitesi.
+
+## Yerelde çalıştırma
+```
+npm install
 npm run dev
+```
 
 ## Build
+```
 npm run build
-npm run preview
+```
 
-## Pages
-Settings → Pages → Source: GitHub Actions
+## GitHub Pages
+- Repo adı: `burakkaraca.github.io`
+- Settings → Pages → Source: **GitHub Actions**
+- `main` branch'e push ettikten sonra otomatik deploy.
