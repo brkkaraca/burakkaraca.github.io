@@ -23,7 +23,8 @@ const Title = ({ children, icon: Icon }) => (
     <span>{children}</span>
   </h3>
 );
-
+const cardCls =
+  "border border-[#D6E2E8] rounded-2xl p-6 bg-transparent backdrop-blur shadow-[0_4px_14px_rgba(26,44,58,0.06)]";
 export default function App() {
   const [POSTS, setPOSTS] = useState([]);
   const [route, setRoute] = useState(typeof window === "undefined" ? "home" : parseHash());
@@ -165,8 +166,13 @@ const activePost = useMemo(
       {route === "hakkimda" && (
         <section className="max-w-3xl mx-auto px-6 py-12 w-full">
           <Title icon={UserRound}>Hakkımda</Title>
-          <div className="relative after:content-[''] after:block after:clear-both">
-            <img src="/profile.jpg" alt="Burak Karaca" className="w-24 h-24 md:w-32 md:h-32 rounded-xl object-cover border border-[#D6E2E8] mb-2 mr-4 md:mb-2 md:mr-6 float-left" />
+
+          <div className={`${cardCls} relative after:content-[''] after:block after:clear-both`}>
+            <img
+              src="/profile.jpg"
+              alt="Burak Karaca"
+              className="w-24 h-24 md:w-32 md:h-32 rounded-xl object-cover border border-[#D6E2E8] mb-2 mr-4 md:mb-2 md:mr-6 float-left"
+            />
             <div className="space-y-4 text-sm leading-relaxed">
               <p>15 yılı aşkın iş deneyimimle, farklı sektörlerde kazandığım bilgi ve becerilerle Intertech’te Mimar İş Analisti olarak görev alıyorum. Analitik düşünme yeteneğim, hızlı öğrenme kabiliyetim ve problem çözme becerimle iş süreçlerinde katma değer sağlayan projelerde kilit roller üstleniyorum. Farklı perspektiflerden yaklaşarak iş süreçlerini optimize ediyor ve değer odaklı çözümler geliştiriyorum.</p>
               <p>DenizBank’taki kariyerime şube operasyonlarında başladım ve 2021 yılında Bilgi Teknolojileri alanına geçiş yaparak bu alanda uzmanlaştım. Bu süreç, teknolojik yenilikleri hızla benimseme ve iş hedefleri doğrultusunda stratejik çözümler geliştirme yetkinliğimi pekiştirdi. MobilDeniz projelerinde kullanıcı ihtiyaçlarını analiz ederken, uygulama performansı ve güvenliğini artırmaya yönelik kritik tespitler ve öneriler sundum.</p>
