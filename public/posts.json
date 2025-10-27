@@ -1,72 +1,23 @@
 [
   {
-    "id": "biyometrik-onay-yonetimi",
-    "title": "Biyometrik Onay Süreçlerinde Merkezî Yönetim",
-    "excerpt": "Kullanıcı onaylarının sürdürülebilir yönetimi ve deneyim sadeleştirmesi.",
-    "content": "Bu yazıda biyometrik onay akışlarının merkezî yönetimi, mevzuat uyumu ve deneyim etkisini ele alıyorum. Modüler onay servisleri, audit izleri ve uçtan uca ölçümleme ile sürdürülebilirlik sağlanabilir.",
-    "date": "2025-02-01"
+    "id": "mobil-bankacilikta-guvenlik-ve-inovasyon-gelecegin-bankaciligi",
+    "title": "Mobil Bankacılıkta Güvenlik ve İnovasyon: Geleceğin Bankacılığı",
+    "excerpt": "Mobil bankacılıkta güvenlik ve inovasyon el ele ilerliyor; yeni teknolojiler, kullanıcı deneyimini geliştirirken finansal işlemleri her zamankinden daha güvenli hale getiriyor.",
+    "content": "Dijitalleşen dünya, finansal hizmetlere erişim yöntemlerini büyük ölçüde değiştirdi. Özellikle mobil bankacılık, müşterilerin bankacılık işlemlerini hızlı ve pratik bir şekilde gerçekleştirmesine olanak tanıyor. Ancak bu hız ve pratiklik, güvenlik konusundaki hassasiyeti de beraberinde getiriyor. Bankalar, bir yandan güvenliği artırırken diğer yandan yenilikçi çözümler sunarak rekabet avantajı elde ediyor.<br /><br />Güvenliğin Önemi ve Yeni Yaklaşımlar<br />Mobil bankacılıkta güvenlik, kullanıcıların en önemli endişelerinden biri. Özellikle veri ihlalleri ve siber saldırılar, bankalar için büyük bir risk oluşturuyor. Bu riskleri minimize etmek için bankalar, biyometrik doğrulama (parmak izi, yüz tanıma) ve çok faktörlü kimlik doğrulama (MFA) gibi yöntemleri kullanarak güvenlik seviyelerini artırıyor. Bu teknolojiler, kullanıcıların işlemlerini daha güvenli bir şekilde yapmasını sağlarken, kötü niyetli saldırılara karşı güçlü bir koruma kalkanı oluşturuyor.<br /><br />İnovasyonun Rolü<br />Mobil bankacılığın geleceği, yalnızca güvenlik çözümlerine odaklanmakla sınırlı değil; aynı zamanda inovasyon da büyük rol oynuyor. Bankalar, mobil uygulamalarda kullanıcı deneyimini geliştirmek ve güvenliği artırmak için yenilikçi teknolojiler kullanıyor. Blockchain teknolojisi, finansal işlemlerde daha fazla şeffaflık ve güvenlik sağlarken, giyilebilir teknolojiler (smartwatch bankacılığı) de mobil bankacılıkta yeni bir dönem başlatıyor. Bankaların, bu yeni teknolojileri doğru entegre etmesi, müşterilere sundukları hizmetin kalitesini artıracak.<br /><br />Gelecek Vizyonu<br />Mobil bankacılıkta inovasyonun ve güvenliğin iç içe geçtiği bir geleceğe doğru ilerliyoruz. Özellikle yapay zekâ tabanlı güvenlik sistemleri, anormal davranışları tespit ederek anında müdahale sağlayacak. Bununla birlikte, blok zinciri (blockchain) ve yeni nesil doğrulama yöntemleri ile bankaların sunduğu mobil hizmetler daha güvenli, kullanıcı dostu ve yenilikçi olacak. Mobil bankacılığın bu hızlı gelişimi, bankaların rekabet gücünü artırarak sektördeki inovasyonu hızlandıracak.",
+    "date": "2024-09-24"
   },
   {
-    "id": "mikro-etkiler-buyuk-sonuclar",
-    "title": "Mobil Bankacılıkta Mikro Etkiler, Büyük Sonuçlar",
-    "excerpt": "Küçük optimizasyonların kullanıcı davranışına etkisini inceliyoruz.",
-    "content": "Mikro metrikler: TAP, TTI, boşta kalma süreleri ve hata oranları. Küçük iyileştirmelerin dönüşüm ve memnuniyete etkisine örnek vaka çalışmaları paylaşıyorum.",
-    "date": "2025-01-20"
+    "id": "fintechler-ve-bankacilik-rekabet-mi-isbirligi-mi",
+    "title": "Fintech'ler ve Bankacılık: Rekabet mi, İşbirliği mi?",
+    "excerpt": "Fintech’ler bankacılık sektörünü dönüştürürken, rekabetin yanında güçlü iş birliği modelleriyle geleceğin finans ekosistemini şekillendiriyor.",
+    "content": "Bankacılık sektörü, dijitalleşme sürecinde birçok yenilikle karşı karşıya. Özellikle fintech (finansal teknoloji) şirketleri, bu dönüşümde hem bir fırsat hem de bir tehdit olarak karşımıza çıkıyor. Fintech'ler, hızlı ve esnek yapılarıyla finansal hizmetlerde devrim yaratırken, bankaların geleneksel iş modellerine meydan okuyor. Peki, bu dinamik değişim sektörü nasıl etkiliyor? Fintech'ler ve bankalar arasındaki ilişki rekabete mi, yoksa iş birliğine mi dönüşüyor?<br /><br />Fintech'lerin Bankacılığa Etkisi<br />Fintech'lerin yükselişi, dijital ödeme çözümleri, kişisel finans yönetimi uygulamaları, mikro kredi sistemleri ve yatırım platformları gibi birçok hizmetin gelişmesine yol açtı. Bu yenilikler, müşterilere daha hızlı, kolay ve kişiselleştirilmiş finansal çözümler sunuyor. Geleneksel bankaların genellikle daha yavaş hareket eden yapısına kıyasla fintech'ler, teknolojiyi kullanarak müşterilere daha esnek hizmetler sunabiliyor.<br />Özellikle dijital cüzdanlar, kripto para ve blockchain gibi teknolojiler, geleneksel bankaların dikkatini çekmiş durumda. Ancak burada fintech'lerin yalnızca bankalara meydan okuyan bir rakip olmadığına, aynı zamanda onlara fırsatlar sunduğuna dikkat çekmek gerekiyor. Birçok banka, fintech'lerle iş birliği yaparak bu yeni teknolojileri hızlı bir şekilde benimsemeye çalışıyor.<br /><br />İş Birliği ve Rekabet Dengesi<br />Bankalar ve fintech'ler arasında gelişen bu ilişkide dikkat çekici olan nokta, rekabetle birlikte doğan iş birliği fırsatları. Bankalar, kendi teknolojik altyapılarını geliştirmek için büyük yatırımlar yapmak yerine fintech'lerle ortaklık kurarak daha hızlı dijital çözümler sunabiliyorlar. Örneğin, birçok büyük banka, fintech'lerle API'ler aracılığıyla entegre olup, müşterilerine finansal hizmetleri daha geniş bir ağ üzerinden sunma imkanı yaratıyor. Bu noktada Banking as a Service (BaaS) modelinin yükselişi, bankaların fintech'lerle nasıl daha etkin bir şekilde çalıştığını gösteriyor.<br />BaaS sayesinde fintech'ler, bankaların sunduğu finansal altyapıyı kullanarak kendi platformlarından müşterilerine bankacılık hizmetleri sunabiliyor. Bu model, hem bankaların gelir kaynaklarını çeşitlendiriyor hem de fintech'lerin hızla büyümesini sağlıyor. Bankalar, fintech'lerle iş birliği yaparak hem rekabete ayak uydurabiliyor hem de müşteri memnuniyetini artırıyor.<br /><br />Gelecek Vizyonu: İş Birliği Kaçınılmaz mı?<br />Gelecek yıllarda fintech'lerin ve bankaların daha sıkı iş birliği yapması bekleniyor. Bankalar, fintech'lerin inovatif yaklaşımından faydalanarak daha esnek ve çevik hale gelecekler. Özellikle yapay zeka, blockchain ve dijital cüzdan gibi teknolojilerin, bankacılıkta yeni iş modellerinin gelişmesine katkıda bulunacağı öngörülüyor. Veri analitiği ile birleşen fintech çözümleri, müşterilere daha kişiselleştirilmiş ve hedefli hizmetler sunacak.",
+    "date": "2024-09-23"
   },
   {
-    "id": "veri-odakli-analist",
-    "title": "Veri Odaklı Karar Alma ve Analist Rolü",
-    "excerpt": "Hızlı kararlar için doğru veri mimarisinin önemi.",
-    "content": "Ürün kararlarında deney tasarımı, event şeması ve observability. Analistin köprü rolü ve veri okuryazarlığı kültürü üzerine pratik öneriler.",
-    "date": "2024-12-30"
-  },
-  {
-    "id": "mobildeniz-performans-ipuclari",
-    "title": "MobilDeniz’te Performans İyileştirme İpuçları",
-    "excerpt": "Gerçek akışlardan toplanan metriklerle hızlı kazanımlar.",
-    "content": "Cold start optimizasyonu, lazy load stratejileri, API batching ve offline-first yaklaşımı üzerinden örnekler.",
-    "date": "2025-03-10"
-  },
-  {
-    "id": "event-sema-tasarimi",
-    "title": "Event Şeması Tasarımında Yapılan 7 Hata",
-    "excerpt": "Analitik olay şemalarında veri kaybına yol açan yaygın tuzaklar.",
-    "content": "İsimlendirme tutarsızlıkları, zorunlu alanlar, sürümleme, geriye uyumluluk ve validasyon yaklaşımları.",
-    "date": "2025-03-02"
-  },
-  {
-    "id": "watcher-alarm-pratikleri",
-    "title": "ELK Watcher Alarmlarında Pratikler",
-    "excerpt": "Ölçülebilir ve gürültüsüz alarm tasarımı.",
-    "content": "Session-bazlı sayım, must_not filtreleri, tekilleştirme ve e-posta/tablo çıktısı için ipuçları.",
-    "date": "2025-02-18"
-  },
-  {
-    "id": "kyc-nfc-akislari",
-    "title": "KYC & NFC Akışlarında Deneyim İyileştirmeleri",
-    "excerpt": "Başarısızlık nedenlerini azaltan küçük dokunuşlar.",
-    "content": "DG12/COM kontrolleri, hata mesajlarının yerelleştirilmesi ve retry politikaları.",
-    "date": "2025-01-05"
-  },
-  {
-    "id": "sessiz-liderlik-analist",
-    "title": "Sessiz Liderlik ve Analist Rolü",
-    "excerpt": "Yetkisiz etki yaratma üzerine notlar.",
-    "content": "Karar kalitesine odaklanma, görünmez koordinasyon ve güven inşası üzerine kısa bir deneme.",
-    "date": "2024-11-28"
-  },
-  {
-    "id": "takim-ritimleri",
-    "title": "Takım Ritimleri: Haftalık Akış Nasıl Olmalı?",
-    "excerpt": "Stand-up’tan retroya minimal, etkili bir ritim.",
-    "content": "Toplantıların amacı, çıktıları ve anti-pattern’ler. Zaman kutulama ve belgelemeyle verim artışı.",
-    "date": "2024-11-10"
-  },
-  {
-    "id": "hata-mesaji-tasarimi",
-    "title": "Hata Mesajı Tasarımı: Kullanıcıyı Kaybetmeyin",
-    "excerpt": "Hatalarda anlaşılır dil ve yönlendirme.",
-    "content": "Örnek metin kalıpları, yerelleştirme, teknik detayın görünürlüğü ve aksiyon butonları.",
-    "date": "2024-10-25"
+    "id": "dijital-donusum-bankacilikta-yeni-bir-donem-basliyor",
+    "title": "Dijital Dönüşüm: Bankacılıkta Yeni Bir Dönem Başlıyor",
+    "excerpt": "Dijital dönüşüm, bankacılıkta müşteri deneyimini yeniden tanımlarken; hız, güvenlik ve verimlilik odaklı yeni bir çağın kapılarını aralıyor.",
+    "content": "Bankacılık sektörü, dijital dönüşümle birlikte köklü bir değişim yaşıyor. Türkiye’de ve dünyada bankalar, müşterilerine daha hızlı ve kişiselleştirilmiş hizmetler sunmak için dijitalleşmeye ciddi yatırımlar yapıyor. Peki, bu dönüşüm neleri kapsıyor?<br /><br />Türkiye'de Dijital Dönüşüm: Türkiye’de dijital bankacılık, özellikle uzaktan müşteri edinimi ve mobil bankacılık çözümleri ile hız kazandı. Artık şubeye gitmeden birçok işlem dijital kanallar aracılığıyla kolayca yapılabiliyor. Bu süreç, müşteri memnuniyetini artırırken, bankaların da operasyonel verimliliğini güçlendiriyor.<br /><br />Dünya Genelinde Dijitalleşme: Dünya genelinde yapay zeka ve veri analitiği gibi teknolojiler, bankaların müşteri ihtiyaçlarını daha iyi anlamasını ve hızlı çözümler sunmasını sağlıyor. Ancak dijitalleşmenin getirdiği bir diğer kritik unsur, siber güvenlik ihtiyacının artması. Güvenli ve kişisel verilerin korunması artık her bankanın önceliği haline gelmiş durumda.<br /><br />BaaS ve XaaS ile Bankacılık Yeniden Şekilleniyor: Dijital dönüşüm sadece bankaların teknolojiyi kullanma şeklini değil, hizmet sunma biçimini de değiştiriyor. BaaS (Banking as a Service), bankaların finansal hizmetlerini API’ler aracılığıyla üçüncü taraf platformlarla paylaşmasına olanak tanıyarak, hem fintech’lerin hem de diğer iş ortaklarının müşterilerine finansal hizmet sunmasını sağlıyor. Bu model, bankaların esnekliğini artırırken, yeni gelir fırsatları yaratıyor.<br /><br />Aynı zamanda, XaaS (Everything as a Service) modelinin sağladığı bulut tabanlı hizmetler, bankalara altyapılarını modernize etme ve operasyonel maliyetlerini düşürme fırsatı veriyor. Bu sayede, bankalar daha hızlı ölçeklenebiliyor ve yeni çözümleri daha kısa sürede piyasaya sunabiliyor.<br /><br />Gelecek Vizyonu: Dijital dönüşüm, gelecekte bankacılık sektörünü daha da müşteri odaklı, yenilikçi ve esnek hale getirecek. Yapay zeka (AI), bankaların operasyonlarını hızlandıracak, veri analitiği ile müşteri ihtiyaçlarını önceden tahmin edebilecek ve dolandırıcılık tespitinde güvenlik seviyelerini artıracak. Özellikle AI tabanlı chatbot ve dijital asistanlar, müşterilere anında destek sunarken, kişiselleştirilmiş hizmetler sayesinde müşteri memnuniyeti üst düzeye çıkacak.<br /><br />Gelecekte otomatik kredi değerlendirme ve yatırım tavsiyeleri gibi hizmetler de yapay zeka ile daha hızlı ve doğru şekilde sunulacak. Bankalar, bu sayede müşteri taleplerine daha proaktif çözümler sunacak ve rekabet avantajını artıracaklar.<br /><br />Ayrıca, BaaS ve XaaS modelleriyle bankalar, altyapılarını diğer platformlara açarak finansal hizmetlerin daha geniş kitlelere ulaşmasını sağlayacaklar. Bu hizmetler, bankaların büyümesini hızlandırırken, yeni iş modellerinin gelişmesine de zemin hazırlayacak.<br /><br />Sonuç olarak, dijital dönüşüm ve yapay zeka gelecekte bankacılığın temel yapı taşlarını oluşturarak, sektördeki inovasyonları hızlandıracak ve bankaların daha sürdürülebilir, verimli ve müşteri odaklı hale gelmesini sağlayacak.",
+    "date": "2024-09-22"
   }
 ]
