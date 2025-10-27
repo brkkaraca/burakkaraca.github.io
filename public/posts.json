@@ -1,0 +1,72 @@
+[
+  {
+    "id": "biyometrik-onay-yonetimi",
+    "title": "Biyometrik Onay Süreçlerinde Merkezî Yönetim",
+    "excerpt": "Kullanıcı onaylarının sürdürülebilir yönetimi ve deneyim sadeleştirmesi.",
+    "content": "Bu yazıda biyometrik onay akışlarının merkezî yönetimi, mevzuat uyumu ve deneyim etkisini ele alıyorum. Modüler onay servisleri, audit izleri ve uçtan uca ölçümleme ile sürdürülebilirlik sağlanabilir.",
+    "date": "2025-02-01"
+  },
+  {
+    "id": "mikro-etkiler-buyuk-sonuclar",
+    "title": "Mobil Bankacılıkta Mikro Etkiler, Büyük Sonuçlar",
+    "excerpt": "Küçük optimizasyonların kullanıcı davranışına etkisini inceliyoruz.",
+    "content": "Mikro metrikler: TAP, TTI, boşta kalma süreleri ve hata oranları. Küçük iyileştirmelerin dönüşüm ve memnuniyete etkisine örnek vaka çalışmaları paylaşıyorum.",
+    "date": "2025-01-20"
+  },
+  {
+    "id": "veri-odakli-analist",
+    "title": "Veri Odaklı Karar Alma ve Analist Rolü",
+    "excerpt": "Hızlı kararlar için doğru veri mimarisinin önemi.",
+    "content": "Ürün kararlarında deney tasarımı, event şeması ve observability. Analistin köprü rolü ve veri okuryazarlığı kültürü üzerine pratik öneriler.",
+    "date": "2024-12-30"
+  },
+  {
+    "id": "mobildeniz-performans-ipuclari",
+    "title": "MobilDeniz’te Performans İyileştirme İpuçları",
+    "excerpt": "Gerçek akışlardan toplanan metriklerle hızlı kazanımlar.",
+    "content": "Cold start optimizasyonu, lazy load stratejileri, API batching ve offline-first yaklaşımı üzerinden örnekler.",
+    "date": "2025-03-10"
+  },
+  {
+    "id": "event-sema-tasarimi",
+    "title": "Event Şeması Tasarımında Yapılan 7 Hata",
+    "excerpt": "Analitik olay şemalarında veri kaybına yol açan yaygın tuzaklar.",
+    "content": "İsimlendirme tutarsızlıkları, zorunlu alanlar, sürümleme, geriye uyumluluk ve validasyon yaklaşımları.",
+    "date": "2025-03-02"
+  },
+  {
+    "id": "watcher-alarm-pratikleri",
+    "title": "ELK Watcher Alarmlarında Pratikler",
+    "excerpt": "Ölçülebilir ve gürültüsüz alarm tasarımı.",
+    "content": "Session-bazlı sayım, must_not filtreleri, tekilleştirme ve e-posta/tablo çıktısı için ipuçları.",
+    "date": "2025-02-18"
+  },
+  {
+    "id": "kyc-nfc-akislari",
+    "title": "KYC & NFC Akışlarında Deneyim İyileştirmeleri",
+    "excerpt": "Başarısızlık nedenlerini azaltan küçük dokunuşlar.",
+    "content": "DG12/COM kontrolleri, hata mesajlarının yerelleştirilmesi ve retry politikaları.",
+    "date": "2025-01-05"
+  },
+  {
+    "id": "sessiz-liderlik-analist",
+    "title": "Sessiz Liderlik ve Analist Rolü",
+    "excerpt": "Yetkisiz etki yaratma üzerine notlar.",
+    "content": "Karar kalitesine odaklanma, görünmez koordinasyon ve güven inşası üzerine kısa bir deneme.",
+    "date": "2024-11-28"
+  },
+  {
+    "id": "takim-ritimleri",
+    "title": "Takım Ritimleri: Haftalık Akış Nasıl Olmalı?",
+    "excerpt": "Stand-up’tan retroya minimal, etkili bir ritim.",
+    "content": "Toplantıların amacı, çıktıları ve anti-pattern’ler. Zaman kutulama ve belgelemeyle verim artışı.",
+    "date": "2024-11-10"
+  },
+  {
+    "id": "hata-mesaji-tasarimi",
+    "title": "Hata Mesajı Tasarımı: Kullanıcıyı Kaybetmeyin",
+    "excerpt": "Hatalarda anlaşılır dil ve yönlendirme.",
+    "content": "Örnek metin kalıpları, yerelleştirme, teknik detayın görünürlüğü ve aksiyon butonları.",
+    "date": "2024-10-25"
+  }
+]
