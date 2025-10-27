@@ -59,7 +59,7 @@ export default function App() {
       <header className="sticky top-0 z-20 flex justify-between items-center px-6 py-4 border-b border-[#D6E2E8] bg-white/10 backdrop-blur-md backdrop-saturate-150 text-[#1A2C3A]">
         <div className="flex items-center gap-3">
           <img src="/logo.png" alt="Burak Karaca logo" className="h-10 w-10 object-contain rounded-md border border-[#D6E2E8] bg-white/70" />
-          <h1 className="text-lg font-semibold">Burak Karaca</h1>
+          <h1 className="text-lg font-semibold hidden md:block">Burak Karaca</h1>
         </div>
         <nav className="flex gap-6 text-sm">
           <a href="#/" onClick={(e) => { e.preventDefault(); go("home"); }} className={`transition-colors ${route === "home" ? "text-[#2C5F6C]" : ""} hover:text-[#2C5F6C]`}>Anasayfa</a>
