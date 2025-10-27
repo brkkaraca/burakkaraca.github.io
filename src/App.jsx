@@ -1,6 +1,6 @@
 
 import React, { useEffect, useMemo, useState } from "react";
-import { Linkedin, Twitter, Github, Mail, Instagram, Share2, ChevronRight, Sparkles, Files, UserRound } from "lucide-react";
+import { Linkedin, Twitter, Github, Mail, Instagram, Share2, ChevronRight, Sparkles, Files, UserRound, ChevronLeft } from "lucide-react";
 const BASE =
   (typeof import.meta !== "undefined" &&
     import.meta.env &&
@@ -148,19 +148,33 @@ const activePost = useMemo(
       )}
 
       {typeof route === "object" && route.kind === "post" && activePost && (
-        <article className="max-w-3xl mx-auto px-6 py-12 w-full">
-          <div className="flex items-start justify-between gap-4">
-            <h1 className="text-3xl font-bold mb-2">{activePost.title}</h1>
-            <button onClick={()=>shareCurrent(activePost.title)} className="shrink-0 inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-[#D6E2E8] hover:text-[#2C5F6C] transition-colors" title="Paylaş">
-              <Share2 className="w-4 h-4" />
-              <span className="text-sm">Paylaş</span>
-            </button>
-          </div>
-          <div className="text-xs opacity-70 mb-6">{fmt(activePost.date)}</div>
-          <div
-          className="max-w-none"
-          dangerouslySetInnerHTML={{ __html: activePost.content }}/>
-        </article>
+   <article className="max-w-3xl mx-auto px-6 py-12 w-full">
+    {/* Üst şerit: Geri (Tüm Yazılarım) + Paylaş */}
+    <div className="flex items-center justify-between gap-4 mb-4">
+      <a
+        href="#/yazilar"
+        onClick={(e)=>{ e.preventDefault(); go("yazilar"); }}
+        className="inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-[#D6E2E8] hover:text-[#2C5F6C] transition-colors"
+      >
+        <ChevronLeft className="w-4 h-4" />
+        <span className="text-sm">Tüm Yazılarım</span>
+      </a>
+      <button
+        onClick={()=>shareCurrent(activePost.title)}
+        className="shrink-0 inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-[#D6E2E8] hover:text-[#2C5F6C] transition-colors"
+        title="Paylaş"
+      >
+        <Share2 className="w-4 h-4" />
+        <span className="text-sm">Paylaş</span>
+      </button>
+    </div>
+    <h1 className="text-3xl font-bold mb-2">{activePost.title}</h1>
+    <div className="text-xs opacity-70 mb-6">{fmt(activePost.date)}</div>
+    <div
+      className="max-w-none"
+      dangerouslySetInnerHTML={{ __html: activePost.content }}
+    />
+   </article>
       )}
 
       {route === "hakkimda" && (
