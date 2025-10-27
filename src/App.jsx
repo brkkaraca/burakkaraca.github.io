@@ -56,43 +56,22 @@ export default function App() {
         </div>
         <nav className="flex gap-6 text-sm">
           <a href="#/" onClick={(e) => { e.preventDefault(); go("home"); }} className={`transition-colors ${route === "home" ? "text-[#2C5F6C]" : ""} hover:text-[#2C5F6C]`}>Anasayfa</a>
-          <a href="#/hakkimda" onClick={(e) => { e.preventDefault(); go("hakkimda"); }} className={`transition-colors ${route === "hakkimda" ? "text-[#2C5F6C]" : ""} hover:text-[#2C5F6C]`}>Hakkımda</a>
-          <a href="#/yazilar" onClick={(e) => { e.preventDefault(); go("yazilar"); }} className={`transition-colors ${(route === "yazilar" || (typeof route === "object" && route.kind === "post")) ? "text-[#2C5F6C]" : ""} hover:text-[#2C5F6C]`}>Yazılar</a>
-        </nav>
-      </header>
-
-      {route === "home" && (
-        <>
-          <section className="flex flex-col items-center justify-center text-center py-16 px-6">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Analiz ve Mobil Deneyim Üzerine Yazıyorum.</h2>
-            <p className="max-w-2xl leading-relaxed">Intertech’te Architect Business Analyst olarak; mobil bankacılık, süreç optimizasyonu ve kullanıcı deneyimi üzerine içerikler paylaşıyorum.</p>
-            <div className="flex gap-3 mt-8">
-              <a href="https://x.com/brkkaraca" target="_blank" rel="noopener noreferrer" onClick={(e)=>{e.preventDefault(); window.open('https://x.com/brkkaraca','_blank','noopener');}} className="inline-flex items-center justify-center w-9 h-9 rounded-full hover:text-[#2C5F6C]"><Twitter size={18} /></a>
-              <a href="https://linkedin.com/in/burakkaraca" target="_blank" rel="noopener noreferrer" onClick={(e)=>{e.preventDefault(); window.open('https://linkedin.com/in/burakkaraca','_blank','noopener');}} className="inline-flex items-center justify-center w-9 h-9 rounded-full hover:text-[#2C5F6C]"><Linkedin size={18} /></a>
-              <a href="https://github.com/brkkaraca" target="_blank" rel="noopener noreferrer" onClick={(e)=>{e.preventDefault(); window.open('https://github.com/brkkaraca','_blank','noopener');}} className="inline-flex items-center justify-center w-9 h-9 rounded-full hover:text-[#2C5F6C]"><Github size={18} /></a>
-              <a href="https://instagram.com/brkkaraca" target="_blank" rel="noopener noreferrer" onClick={(e)=>{e.preventDefault(); window.open('https://instagram.com/brkkaraca','_blank','noopener');}} className="inline-flex items-center justify-center w-9 h-9 rounded-full hover:text-[#2C5F6C]"><Instagram size={18} /></a>
-              <a href="mailto:burak@burakkaraca.com.tr" className="inline-flex items-center justify-center w-9 h-9 rounded-full hover:text-[#2C5F6C]"><Mail size={18} /></a>
-            </div>
-          </section>
-
-          <section className="max-w-3xl mx-auto px-6 py-10 w-full">
-            <h3 className="text-2xl font-semibold mb-6 border-b border-[#D6E2E8] pb-2">Son Yazılar</h3>
-            <div className="space-y-6">
-              {POSTS.slice(0,3).map((p) => (
-                <a
-                  key={p.id}
-                  href={`#/yazilar/${p.id}`}
-                  onClick={(e)=>{e.preventDefault(); go({ kind: "post", id: p.id });}}
-                  className="block border border-[#D6E2E8] rounded-2xl p-5 transition-colors hover:text-[#2C5F6C] cursor-pointer bg-transparent backdrop-blur shadow-[0_4px_14px_rgba(26,44,58,0.06)]"
-                >
-                  <h4 className="font-semibold text-lg">{p.title}</h4>
-                  <p className="text-sm mt-2">{p.excerpt}</p>
-                </a>
-              ))}
-            </div>
-          </section>
-        </>
-      )}
+          <a href="#/hakkimda" onClick={(e) => { e.preventDefault(); go("hakkimda"); }} className={`transition-colors ${route === "hakkimda" && (
+  <section className="max-w-3xl mx-auto px-6 py-12 w-full">
+    <h3 className="text-2xl font-semibold mb-6 border-b border-[#D6E2E8] pb-2">Hakkımda</h3>
+    <div className="border border-[#D6E2E8] rounded-2xl p-6 bg-transparent backdrop-blur shadow-[0_8px_20px_rgba(26,44,58,0.08)]">
+      <img src="/profile.jpg" alt="Burak Karaca" className="w-28 md:w-32 rounded-xl border border-[#D6E2E8] sm:float-left sm:mr-6 sm:mb-2 object-cover" />
+      <div className="space-y-4 text-sm leading-relaxed">
+        <p>15 yılı aşkın iş deneyimimle, farklı sektörlerde kazandığım bilgi ve becerilerle Intertech’te Mimar İş Analisti olarak görev alıyorum. Analitik düşünme yeteneğim, hızlı öğrenme kabiliyetim ve problem çözme becerimle iş süreçlerinde katma değer sağlayan projelerde kilit roller üstleniyorum. Farklı perspektiflerden yaklaşarak iş süreçlerini optimize ediyor ve değer odaklı çözümler geliştiriyorum.</p>
+        <p>DenizBank’taki kariyerime şube operasyonlarında başladım ve 2021 yılında Bilgi Teknolojileri alanına geçiş yaparak bu alanda uzmanlaştım. Bu süreç, teknolojik yenilikleri hızla benimseme ve iş hedefleri doğrultusunda stratejik çözümler geliştirme yetkinliğimi pekiştirdi. MobilDeniz projelerinde kullanıcı ihtiyaçlarını analiz ederken, uygulama performansı ve güvenliğini artırmaya yönelik kritik tespitler ve öneriler sundum.</p>
+        <p>Farklı bakış açıları geliştirerek karmaşık problemleri çözme, yenilikçi çözümler üretme ve iş süreçlerini optimize etme konularında yetkinlik kazandım. Stratejik düşünme ve karar alma süreçlerinde etkin rol üstlenerek, liderlik becerilerimle ekipleri yönlendirme ve iş hedefleri doğrultusunda çözümler geliştirme konularında deneyim sahibiyim. Hızlı öğrenme kabiliyetim sayesinde değişen teknoloji ve iş modellerine hızla adapte oluyor, etkili iletişim becerim sayesinde ekip içi uyumu ve paydaş iş birliklerini güçlendiriyorum.</p>
+        <p>Yaptığım her işi sadece “tamamlamak” için değil, daha iyisini mümkün kılmak için yapıyorum. Bu yaklaşımla, kendi değerimi ortaya koyarak; analitik bakış açımı ve çözüm odaklı duruşumu hem insanlara hem de iş süreçlerine değer katacak şekilde kullanarak, danışmanlık ve ekip yönetimi gibi alanlarda daha fazla sorumluluk almayı hedefliyorum. Stratejik katkı sağlayan, yön gösteren ve fark yaratan bir liderliğe doğru ilerliyorum. Bu yaklaşımı bir unvandan ziyade bir sorumluluk olarak görüyor ve her koşulda etki yaratmaya odaklanıyorum.</p>
+      </div>
+      <div className="clear-both" />
+    </div>
+  </section>
+)}
+}
 
       {route === "yazilar" && (
         <section className="max-w-3xl mx-auto px-6 py-12 w-full">
