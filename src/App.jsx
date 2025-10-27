@@ -1,24 +1,14 @@
 import { useEffect, useMemo, useState } from "react";
 import { Linkedin, Twitter, Github, Mail, Instagram } from "lucide-react";
 
-type Route = "home" | "hakkimda" | "yazilar" | { kind: "post"; id: string };
-
-type Post = {
-  id: string; // slug
-  title: string;
-  excerpt: string;
-  content: string;
-  date?: string;
-};
-
-const POSTS: Post[] = [
+const POSTS = [
   { id: "biyometrik-onay-yonetimi", title: "Biyometrik Onay Süreçlerinde Merkezî Yönetim", excerpt: "Kullanıcı onaylarının sürdürülebilir yönetimi ve deneyim sadeleştirmesi.", content: "Bu yazıda biyometrik onay akışlarının merkezî yönetimi, mevzuat uyumu ve deneyim etkisini ele alıyorum. Modüler onay servisleri, audit izleri ve uçtan uca ölçümleme ile sürdürülebilirlik sağlanabilir.", date: "2025-02-01" },
   { id: "mikro-etkiler-buyuk-sonuclar", title: "Mobil Bankacılıkta Mikro Etkiler, Büyük Sonuçlar", excerpt: "Küçük optimizasyonların kullanıcı davranışına etkisini inceliyoruz.", content: "Mikro metrikler: TAP, TTI, boşta kalma süreleri ve hata oranları. Küçük iyileştirmelerin dönüşüm ve memnuniyete etkisine örnek vaka çalışmaları paylaşıyorum.", date: "2025-01-20" },
   { id: "veri-odakli-analist", title: "Veri Odaklı Karar Alma ve Analist Rolü", excerpt: "Hızlı kararlar için doğru veri mimarisinin önemi.", content: "Ürün kararlarında deney tasarımı, event şeması ve observability. Analistin köprü rolü ve veri okuryazarlığı kültürü üzerine pratik öneriler.", date: "2024-12-30" },
   ...Array.from({ length: 9 }).map((_, i) => ({ id: `ornek-yazi-${i + 1}`, title: `Örnek Yazı ${i + 1}`, excerpt: "Kısa açıklama metni — yakında içerik eklenecek.", content: "Yer tutucu içerik.", date: "2024-12-01" })),
 ];
 
-function parseHash(): Route {
+function parseHash() {
   const raw = (typeof window !== "undefined" ? window.location.hash : "").replace(/^#\/?/, "");
   if (!raw) return "home";
   const parts = raw.split("/").filter(Boolean);
@@ -29,35 +19,32 @@ function parseHash(): Route {
 }
 
 export default function BurakKaracaMinimal() {
-  const [route, setRoute] = useState<Route>(typeof window === "undefined" ? "home" : parseHash());
+  const [route, setRoute] = useState(typeof window === "undefined" ? "home" : parseHash());
 
   useEffect(() => {
     const onHash = () => setRoute(parseHash());
     window.addEventListener("hashchange", onHash);
-    // İlk yüklemede hash'i senkronize et
     setRoute(parseHash());
     return () => window.removeEventListener("hashchange", onHash);
   }, []);
 
   const activePost = useMemo(() => (typeof route === "object" && route.kind === "post") ? (POSTS.find(p => p.id === route.id) || null) : null, [route]);
 
-  const underlineCls = "text-2xl font-semibold mb-6 border-b border-[#D6E2E8] pb-2"; // Header çizgisi ile aynı
+  const underlineCls = "text-2xl font-semibold mb-6 border-b border-[#D6E2E8] pb-2";
 
-  const go = (r: Route) => {
+  const go = (r) => {
     if (r === "home") window.location.hash = "/";
     else if (r === "hakkimda") window.location.hash = "/hakkimda";
     else if (r === "yazilar") window.location.hash = "/yazilar";
     else if (typeof r === "object" && r.kind === "post") window.location.hash = `/yazilar/${r.id}`;
-    // Local state'i de anında güncelle (hashchange'i beklemeden)
     setRoute(r);
   };
 
   return (
     <div className="min-h-screen flex flex-col font-sans" style={{ background: "linear-gradient(to bottom, #FFFFFF 0%, #F3F4F6 50%, #E5E7EB 100%)", color: "#1A2C3A" }}>
-      {/* HEADER */}
       <header className="flex justify-between items-center px-6 py-4 border-b border-[#D6E2E8] bg-transparent text-[#1A2C3A]">
         <div className="flex items-center gap-3">
-          <img src="/logo.png" alt="Burak Karaca logo" className="h-10 w-10 object-contain rounded-md" />
+          <img src="logo.png" alt="Burak Karaca logo" className="h-10 w-10 object-contain rounded-md" />
           <h1 className="text-lg font-semibold">Burak Karaca</h1>
         </div>
         <nav className="flex gap-6 text-sm">
@@ -67,7 +54,6 @@ export default function BurakKaracaMinimal() {
         </nav>
       </header>
 
-      {/* ROUTES */}
       {route === "home" && (
         <>
           <section className="flex flex-col items-center justify-center text-center py-20 px-6">
@@ -78,7 +64,7 @@ export default function BurakKaracaMinimal() {
               <a href="https://linkedin.com/in/burakkaraca" target="_blank" rel="noopener noreferrer" onClick={(e)=>{e.preventDefault(); window.open('https://linkedin.com/in/burakkaraca','_blank','noopener');}} className="p-2 transition-colors hover:text-[#2C5F6C]"><Linkedin size={18} /></a>
               <a href="https://github.com/brkkaraca" target="_blank" rel="noopener noreferrer" onClick={(e)=>{e.preventDefault(); window.open('https://github.com/brkkaraca','_blank','noopener');}} className="p-2 transition-colors hover:text-[#2C5F6C]"><Github size={18} /></a>
               <a href="https://instagram.com/brkkaraca" target="_blank" rel="noopener noreferrer" onClick={(e)=>{e.preventDefault(); window.open('https://instagram.com/brkkaraca','_blank','noopener');}} className="p-2 transition-colors hover:text-[#2C5F6C]"><Instagram size={18} /></a>
-              <a href="mailto:burak@burakkaraca.com.tr" onClick={(e)=>{ /* canvas fallback */ }} className="p-2 transition-colors hover:text-[#2C5F6C]"><Mail size={18} /></a>
+              <a href="mailto:burak@burakkaraca.com.tr" className="p-2 transition-colors hover:text-[#2C5F6C]"><Mail size={18} /></a>
             </div>
           </section>
 
@@ -124,7 +110,7 @@ export default function BurakKaracaMinimal() {
         <section className="max-w-3xl mx-auto px-6 py-12 w-full">
           <h3 className={underlineCls}>Hakkımda</h3>
           <div className="flex gap-6 items-start border border-[#D6E2E8] rounded-2xl p-6 bg-transparent">
-            <img src="/profile.jpg" alt="Burak Karaca" className="h-28 w-28 md:h-32 md:w-32 rounded-xl object-cover border border-[#D6E2E8]" />
+            <img src="profile.jpg" alt="Burak Karaca" className="h-28 w-28 md:h-32 md:w-32 rounded-xl object-cover border border-[#D6E2E8]" />
             <div className="space-y-4 text-sm leading-relaxed">
               <p>15 yılı aşkın iş deneyimimle, farklı sektörlerde kazandığım bilgi ve becerilerle Intertech’te Mimar İş Analisti olarak görev alıyorum. Analitik düşünme yeteneğim, hızlı öğrenme kabiliyetim ve problem çözme becerimle iş süreçlerinde katma değer sağlayan projelerde kilit roller üstleniyorum. Farklı perspektiflerden yaklaşarak iş süreçlerini optimize ediyor ve değer odaklı çözümler geliştiriyorum.</p>
               <p>DenizBank’taki kariyerime şube operasyonlarında başladım ve 2021 yılında Bilgi Teknolojileri alanına geçiş yaparak bu alanda uzmanlaştım. Bu süreç, teknolojik yenilikleri hızla benimseme ve iş hedefleri doğrultusunda stratejik çözümler geliştirme yetkinliğimi pekiştirdi. MobilDeniz projelerinde kullanıcı ihtiyaçlarını analiz ederken, uygulama performansı ve güvenliğini artırmaya yönelik kritik tespitler ve öneriler sundum.</p>
@@ -135,7 +121,6 @@ export default function BurakKaracaMinimal() {
         </section>
       )}
 
-      {/* FOOTER */}
       <footer className="mt-auto border-t border-[#D6E2E8] text-sm py-6 px-6 flex flex-col md:flex-row justify-between items-center bg-transparent">
         <p>© 2025 Burak Karaca</p>
         <a href="mailto:burak@burakkaraca.com.tr" className="hover:text-[#2C5F6C] transition-colors mt-2 md:mt-0">burak@burakkaraca.com.tr</a>
@@ -144,7 +129,7 @@ export default function BurakKaracaMinimal() {
   );
 }
 
-// Basit runtime kontrolleri
+// Basit kontroller
 if (typeof window !== "undefined") {
   console.assert(POSTS.length >= 3, "POSTS should have at least 3 items");
   const ids = new Set(POSTS.map(p => p.id));
