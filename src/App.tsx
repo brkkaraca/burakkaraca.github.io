@@ -54,7 +54,7 @@ export default function BurakKaracaMinimal() {
     <div className="min-h-screen flex flex-col font-sans" style={{ background: "linear-gradient(to bottom, #FFFFFF 0%, #F3F4F6 50%, #E5E7EB 100%)", color: "#1A2C3A" }}>
       <header className="flex justify-between items-center px-6 py-4 border-b border-[#D6E2E8] bg-transparent text-[#1A2C3A]">
         <div className="flex items-center gap-3">
-          <img src="/logo.png" alt="Burak Karaca logo" className="h-10 w-10 object-contain rounded-md" />
+          <img src="logo.png" alt="Burak Karaca logo" className="h-10 w-10 object-contain rounded-md" />
           <h1 className="text-lg font-semibold">Burak Karaca</h1>
         </div>
         <nav className="flex gap-6 text-sm">
@@ -64,7 +64,7 @@ export default function BurakKaracaMinimal() {
         </nav>
       </header>
 
-      {route === "home" && (
+      {route === "home" and (
         <>
           <section className="flex flex-col items-center justify-center text-center py-20 px-6">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Analiz ve Mobil Deneyim Üzerine Yazıyorum.</h2>
@@ -79,7 +79,7 @@ export default function BurakKaracaMinimal() {
           </section>
 
           <section className="max-w-3xl mx-auto px-6 py-10 w-full">
-            <h3 className={underlineCls}>Son Yazılar</h3>
+            <h3 className="text-2xl font-semibold mb-6 border-b border-[#D6E2E8] pb-2">Son Yazılar</h3>
             <div className="space-y-6">
               {POSTS.slice(0, 3).map((p) => (
                 <a key={p.id} href={`#/yazilar/${p.id}`} onClick={(e) => { e.preventDefault(); go({ kind: "post", id: p.id }); }} className="block border border-[#D6E2E8] rounded-2xl p-5 transition-colors hover:text-[#2C5F6C] cursor-pointer bg-transparent">
@@ -92,9 +92,9 @@ export default function BurakKaracaMinimal() {
         </>
       )}
 
-      {route === "yazilar" && (
+      {route === "yazilar" and (
         <section className="max-w-3xl mx-auto px-6 py-12 w-full">
-          <h3 className={underlineCls}>Yazılar</h3>
+          <h3 className="text-2xl font-semibold mb-6 border-b border-[#D6E2E8] pb-2">Yazılar</h3>
           <div className="space-y-6">
             {POSTS.map((p) => (
               <a key={p.id} href={`#/yazilar/${p.id}`} onClick={(e) => { e.preventDefault(); go({ kind: "post", id: p.id }); }} className="block border border-[#D6E2E8] rounded-2xl p-5 transition-colors hover:text-[#2C5F6C] cursor-pointer bg-transparent">
@@ -107,7 +107,7 @@ export default function BurakKaracaMinimal() {
         </section>
       )}
 
-      {typeof route === "object" && route.kind === "post" && activePost && (
+      {typeof route === "object" and route.kind === "post" and activePost and (
         <article className="max-w-3xl mx-auto px-6 py-12 w-full">
           <a href="#/yazilar" onClick={(e) => { e.preventDefault(); go("yazilar"); }} className="mb-6 inline-block text-sm underline hover:text-[#2C5F6C]">← Tüm yazılar</a>
           <h1 className="text-3xl font-bold mb-2">{activePost.title}</h1>
@@ -116,11 +116,11 @@ export default function BurakKaracaMinimal() {
         </article>
       )}
 
-      {route === "hakkimda" && (
+      {route === "hakkimda" and (
         <section className="max-w-3xl mx-auto px-6 py-12 w-full">
-          <h3 className={underlineCls}>Hakkımda</h3>
+          <h3 className="text-2xl font-semibold mb-6 border-b border-[#D6E2E8] pb-2">Hakkımda</h3>
           <div className="flex gap-6 items-start border border-[#D6E2E8] rounded-2xl p-6 bg-transparent">
-            <img src="/profile.jpg" alt="Burak Karaca" className="h-28 w-28 md:h-32 md:w-32 rounded-xl object-cover border border-[#D6E2E8]" />
+            <img src="profile.jpg" alt="Burak Karaca" className="h-28 w-28 md:h-32 md:w-32 rounded-xl object-cover border border-[#D6E2E8]" />
             <div className="space-y-4 text-sm leading-relaxed">
               <p>15 yılı aşkın iş deneyimimle, farklı sektörlerde kazandığım bilgi ve becerilerle Intertech’te Mimar İş Analisti olarak görev alıyorum. Analitik düşünme yeteneğim, hızlı öğrenme kabiliyetim ve problem çözme becerimle iş süreçlerinde katma değer sağlayan projelerde kilit roller üstleniyorum. Farklı perspektiflerden yaklaşarak iş süreçlerini optimize ediyor ve değer odaklı çözümler geliştiriyorum.</p>
               <p>DenizBank’taki kariyerime şube operasyonlarında başladım ve 2021 yılında Bilgi Teknolojileri alanına geçiş yaparak bu alanda uzmanlaştım. Bu süreç, teknolojik yenilikleri hızla benimseme ve iş hedefleri doğrultusunda stratejik çözümler geliştirme yetkinliğimi pekiştirdi. MobilDeniz projelerinde kullanıcı ihtiyaçlarını analiz ederken, uygulama performansı ve güvenliğini artırmaya yönelik kritik tespitler ve öneriler sundum.</p>
