@@ -1,13 +1,10 @@
 
 import React, { useEffect, useMemo, useState } from "react";
 import { Linkedin, Twitter, Github, Mail, Instagram, Share2, ChevronRight, Sparkles, Files, UserRound } from "lucide-react";
-
-const POSTS = [
-  { id: "biyometrik-onay-yonetimi", title: "Biyometrik Onay Süreçlerinde Merkezî Yönetim", excerpt: "Kullanıcı onaylarının sürdürülebilir yönetimi ve deneyim sadeleştirmesi.", content: "Bu yazıda biyometrik onay akışlarının merkezî yönetimi, mevzuat uyumu ve deneyim etkisini ele alıyorum. Modüler onay servisleri, audit izleri ve uçtan uca ölçümleme ile sürdürülebilirlik sağlanabilir.", date: "2025-02-01" },
-  { id: "mikro-etkiler-buyuk-sonuclar", title: "Mobil Bankacılıkta Mikro Etkiler, Büyük Sonuçlar", excerpt: "Küçük optimizasyonların kullanıcı davranışına etkisini inceliyoruz.", content: "Mikro metrikler: TAP, TTI, boşta kalma süreleri ve hata oranları. Küçük iyileştirmelerin dönüşüm ve memnuniyete etkisine örnek vaka çalışmaları paylaşıyorum.", date: "2025-01-20" },
-  { id: "veri-odakli-analist", title: "Veri Odaklı Karar Alma ve Analist Rolü", excerpt: "Hızlı kararlar için doğru veri mimarisinin önemi.", content: "Ürün kararlarında deney tasarımı, event şeması ve observability. Analistin köprü rolü ve veri okuryazarlığı kültürü üzerine pratik öneriler.", date: "2024-12-30" },
-  ...Array.from({ length: 6 }).map((_, i) => ({ id: "ornek-yazi-"+(i+1), title: "Örnek Yazı "+(i+1), excerpt: "Kısa açıklama metni — yakında içerik eklenecek.", content: "Yer tutucu içerik.", date: "2024-12-01" })),
-];
+const BASE =
+  (typeof import.meta !== "undefined" &&
+    import.meta.env &&
+    import.meta.env.BASE_URL) || "/";
 
 const fmt = (d) => (d ? new Intl.DateTimeFormat("tr-TR", { dateStyle: "medium" }).format(new Date(d)) : "");
 const parseHash = () => {
@@ -28,11 +25,15 @@ const Title = ({ children, icon: Icon }) => (
 );
 
 export default function App() {
+  const [POSTS, setPOSTS] = useState([]);
   const [route, setRoute] = useState(typeof window === "undefined" ? "home" : parseHash());
-  const activePost = useMemo(
-    () => (typeof route === "object" && route.kind === "post" ? POSTS.find((p) => p.id === route.id) || null : null),
-    [route]
-  );
+const activePost = useMemo(
+  () =>
+    (typeof route === "object" && route.kind === "post"
+      ? POSTS.find((p) => p.id === route.id) || null
+      : null),
+  [route, POSTS]
+);
 
   useEffect(() => {
     const onHash = () => setRoute(parseHash());
@@ -40,7 +41,17 @@ export default function App() {
     setRoute(parseHash());
     return () => window.removeEventListener("hashchange", onHash);
   }, []);
-
+  useEffect(() => {
+  fetch(`${BASE}posts.json`, { cache: "no-store" })
+    .then(r => (r.ok ? r.json() : Promise.reject(new Error(r.status))))
+    .then(list => {
+      const clean = (list || [])
+        .filter(p => p && p.id && p.title && p.content)
+        .sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
+      setPOSTS(clean);
+    })
+    .catch(() => setPOSTS([]));
+  }, []);
   useEffect(() => { window.scrollTo({ top: 0, behavior: "smooth" }); }, [route]);
 
   const go = (r) => {
