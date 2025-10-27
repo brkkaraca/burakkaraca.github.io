@@ -156,7 +156,9 @@ const activePost = useMemo(
             </button>
           </div>
           <div className="text-xs opacity-70 mb-6">{fmt(activePost.date)}</div>
-          <div className="max-w-none"><p>{activePost.content}</p></div>
+          <div
+          className="max-w-none"
+          dangerouslySetInnerHTML={{ __html: activePost.content }}/>
         </article>
       )}
 
