@@ -81,7 +81,7 @@ const activePost = useMemo(
     <div className="min-h-screen flex flex-col font-sans" style={{ background: "linear-gradient(to bottom, #FFFFFF 0%, #F3F4F6 50%, #E5E7EB 100%)", color: "#1A2C3A" }}>
       <header className="sticky top-0 z-20 flex justify-between items-center px-6 py-4 border-b border-[#D6E2E8] bg-transparent backdrop-blur backdrop-saturate-150">
         <div className="flex items-center gap-3">
-          <img src="/logo.png" alt="Burak Karaca logo" className="h-10 w-10 rounded-md object-cover bg-white/70 border border-[#D6E2E8]" />
+          <img src="/logo.png" alt="Burak Karaca logo" className="h-11 w-11 rounded-md object-cover bg-white/70 border border-[#D6E2E8]" />
           <h1 className="text-lg font-semibold hidden sm:block">Burak Karaca</h1>
         </div>
         <nav className="flex gap-6 text-sm">
