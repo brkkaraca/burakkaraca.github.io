@@ -95,7 +95,12 @@ const activePost = useMemo(
         <>
           <section className="flex flex-col items-center justify-center text-center py-16 px-6">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Dijital Dönüşümün Merkezinde</h2>
-            <p className="max-w-2xl leading-relaxed">Bir analist için en değerli beceri, detaylarda kaybolmadan bütünü görebilmektir. Ekiplerin doğru kararlara ulaşmasını sağlayan en önemli şeyin, analizin ötesinde vizyonel bir bakış olduğuna inanırım. Mobil deneyim, teknoloji ve iş analizi kesişiminde; gözlemlerimi, fikirlerimi ve deneyimlerimi paylaşıyorum.</p>
+            <p className="max-w-2xl leading-relaxed">
+              Bir analist için en değerli beceri, detaylarda kaybolmadan bütünü görebilmektir. 
+              Ekiplerin doğru kararlara ulaşmasını sağlayan en önemli şeyin, analizin ötesinde vizyonel bir bakış olduğuna inanırım. 
+              Mobil deneyim, teknoloji ve iş analizi kesişiminde; gözlemlerimi, fikirlerimi ve deneyimlerimi paylaşıyorum. 
+              Bazen de iş dünyasının ötesine geçip, hayatın akışına dair gözlem, fikir ve deneyimlerimi katıyorum.
+            </p>
             <div className="flex gap-4 mt-8">
               <a href="https://linkedin.com/in/burakkaraca" target="_blank" rel="noopener noreferrer" onClick={(e)=>{e.preventDefault(); window.open("https://linkedin.com/in/burakkaraca","_blank","noopener");}} className="inline-flex items-center justify-center w-9 h-9 rounded-full transition-opacity hover:opacity-80" title="LinkedIn" style={{ color: '#0A66C2' }}><Linkedin /></a>
               <a href="https://github.com/brkkaraca" target="_blank" rel="noopener noreferrer" onClick={(e)=>{e.preventDefault(); window.open("https://github.com/brkkaraca","_blank","noopener");}} className="inline-flex items-center justify-center w-9 h-9 rounded-full transition-opacity hover:opacity-80" title="GitHub" style={{ color: '#171515' }}><Github /></a>
