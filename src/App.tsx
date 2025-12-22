@@ -70,10 +70,10 @@ export default function BurakKaracaMinimal() {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Analiz ve Mobil Deneyim Üzerine Yazıyorum.</h2>
             <p className="max-w-2xl leading-relaxed">Intertech’te Architect Business Analyst olarak; mobil bankacılık, süreç optimizasyonu ve kullanıcı deneyimi üzerine içerikler paylaşıyorum.</p>
             <div className="flex gap-4 mt-8">
-              <a href="https://x.com/brkkaraca" target="_blank" rel="noopener noreferrer" onClick={(e)=>{e.preventDefault(); window.open('https://x.com/brkkaraca','_blank','noopener');}} className="p-2 transition-colors hover:text-[#2C5F6C]"><Twitter size={18} /></a>
+              <a href="https://x.com/burakkaraca" target="_blank" rel="noopener noreferrer" onClick={(e)=>{e.preventDefault(); window.open('https://x.com/burakkaraca','_blank','noopener');}} className="p-2 transition-colors hover:text-[#2C5F6C]"><Twitter size={18} /></a>
               <a href="https://linkedin.com/in/burakkaraca" target="_blank" rel="noopener noreferrer" onClick={(e)=>{e.preventDefault(); window.open('https://linkedin.com/in/burakkaraca','_blank','noopener');}} className="p-2 transition-colors hover:text-[#2C5F6C]"><Linkedin size={18} /></a>
               <a href="https://github.com/brkkaraca" target="_blank" rel="noopener noreferrer" onClick={(e)=>{e.preventDefault(); window.open('https://github.com/brkkaraca','_blank','noopener');}} className="p-2 transition-colors hover:text-[#2C5F6C]"><Github size={18} /></a>
-              <a href="https://instagram.com/brkkaraca" target="_blank" rel="noopener noreferrer" onClick={(e)=>{e.preventDefault(); window.open('https://instagram.com/brkkaraca','_blank','noopener');}} className="p-2 transition-colors hover:text-[#2C5F6C]"><Instagram size={18} /></a>
+              <a href="https://instagram.com/burakkaraca" target="_blank" rel="noopener noreferrer" onClick={(e)=>{e.preventDefault(); window.open('https://instagram.com/burakkaraca','_blank','noopener');}} className="p-2 transition-colors hover:text-[#2C5F6C]"><Instagram size={18} /></a>
               <a href="mailto:burak@burakkaraca.com.tr" onClick={(e)=>{}} className="p-2 transition-colors hover:text-[#2C5F6C]"><Mail size={18} /></a>
             </div>
           </section>
